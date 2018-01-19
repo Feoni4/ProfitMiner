@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProfitMiner.Properties
+namespace ProfitMiner.Client.Properties
 {
 
 

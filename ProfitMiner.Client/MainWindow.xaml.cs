@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ProfitMiner
+namespace ProfitMiner.Client
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +23,9 @@ namespace ProfitMiner
         public MainWindow()
         {
             InitializeComponent();
+
+            //var z = new ProfitMiner.Core.Pools.ZPool.ZPoolMiningPool();
+            //var x = z.GetWalletState("176rJXonVnHjNrtHpZGXbbvLqZcFM8xFsh");
         }
     }
 }

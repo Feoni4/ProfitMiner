@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfitMiner", "ProfitMiner\ProfitMiner.csproj", "{ED04D665-E839-426F-AC89-4C7F889BED54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfitMiner.Client", "ProfitMiner.Client\ProfitMiner.Client.csproj", "{911E363D-FF6D-44C7-B278-E243AD3D4895}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProfitMiner.ClientCore", "ProfitMiner.ClientCore\ProfitMiner.ClientCore.csproj", "{D61D8E88-18D5-400F-ADAB-8CA978979419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfitMiner.ClientCore.Tests", "ProfitMiner.ClientCore.Tests\ProfitMiner.ClientCore.Tests.csproj", "{5CC4C0B0-63B4-4A2C-8D5F-8E4558DBF186}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ED04D665-E839-426F-AC89-4C7F889BED54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED04D665-E839-426F-AC89-4C7F889BED54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED04D665-E839-426F-AC89-4C7F889BED54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED04D665-E839-426F-AC89-4C7F889BED54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911E363D-FF6D-44C7-B278-E243AD3D4895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911E363D-FF6D-44C7-B278-E243AD3D4895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911E363D-FF6D-44C7-B278-E243AD3D4895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911E363D-FF6D-44C7-B278-E243AD3D4895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D61D8E88-18D5-400F-ADAB-8CA978979419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61D8E88-18D5-400F-ADAB-8CA978979419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61D8E88-18D5-400F-ADAB-8CA978979419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61D8E88-18D5-400F-ADAB-8CA978979419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CC4C0B0-63B4-4A2C-8D5F-8E4558DBF186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CC4C0B0-63B4-4A2C-8D5F-8E4558DBF186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CC4C0B0-63B4-4A2C-8D5F-8E4558DBF186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CC4C0B0-63B4-4A2C-8D5F-8E4558DBF186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
