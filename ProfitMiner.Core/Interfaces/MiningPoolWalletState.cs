@@ -1,4 +1,4 @@
-﻿namespace ProfitMiner.ClientCore.Interfaces
+﻿namespace ProfitMiner.Core.Interfaces
 {
     public class MiningPoolWalletState
     {

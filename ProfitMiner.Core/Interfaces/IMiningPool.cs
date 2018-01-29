@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ProfitMiner.ClientCore.Interfaces
+namespace ProfitMiner.Core.Interfaces
 {
     public interface IMiningPool
     {

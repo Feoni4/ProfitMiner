@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ProfitMiner.Core;
+using ProfitMiner.Core.Pools.ZPool;
 
 namespace ProfitMiner.Client
 {
@@ -24,8 +26,24 @@ namespace ProfitMiner.Client
         {
             InitializeComponent();
 
-            //var z = new ProfitMiner.Core.Pools.ZPool.ZPoolMiningPool();
-            //var x = z.GetWalletState("176rJXonVnHjNrtHpZGXbbvLqZcFM8xFsh");
+            AppDomain.CurrentDomain.UnhandledException += CurrentDomainOnUnhandledException;
+
+            Jobs.JobConfig.Configue();
+        }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var z = new ZPoolMiningPool();
+            var xxx = await z.GetAlgos();
+
+            var x = xxx.ToJson(true);//Zoe
+            throw  new Exception("fatality");
+
+        }
+
+        private void CurrentDomainOnUnhandledException(object sender, UnhandledExceptionEventArgs unhandledExceptionEventArgs)
+        {
+            Console.Write("Eppp");
         }
     }
 }
